@@ -1,11 +1,105 @@
-@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Mitr', sans-serif;
+    font-family: 'Kanit', sans-serif;
     
 }
 
+body{
+    margin: auto;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header nav a {
+    padding: 8px;
+}
+
+.experiencia{
+    width: 100%;
+    margin: auto;
+    background-color: rgb(216, 216, 216);
+    color: rgba(10, 58, 60, 1);
+    display: flex;   
+    justify-content: center; 
+    padding: 20px;
+    margin: 30px 0 30px 0;
+    font-size: 25pt;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.experiencia img{
+    
+    width: 50px;
+}
+
+.banner{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    background-image: url("../img/fundo1.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.banner h1{
+    font-size: 30pt;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(201, 137, 47, 1);
+
+}
+
+.banner .subh1{
+    margin-top: -10px;
+    font-size: 15pt;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(201, 137, 47, 1);
+}
+
+.banner h2{
+    color: white;
+    font-size: 26pt;
+    font-weight: 300;
+}
+
+.banner .subh2{
+    margin-top: -10px;
+    color: white;
+    font-size: 32pt;
+    font-weight: 300;
+}
+
+h2 span{
+    text-decoration: underline orange;
+}
+
+.subh2 span{
+    background-image: url("../img/mancha.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.banner .video{
+    margin: 20px 0 50px 0;
+    box-shadow: 0px 0px 35px rgba(201, 137, 47, 1);
+}
