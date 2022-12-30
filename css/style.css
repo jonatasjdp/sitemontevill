@@ -9,25 +9,97 @@
     
 }
 
+.link-wpp{
+    position: fixed;
+    bottom: 525px;
+    right: 2rem;
+    z-index: 1000;
+    cursor: pointer;   
+}
+
+.btn-wpp{
+    width: 70px;
+    transition: all 0.5s;
+    cursor: pointer;    
+       
+}
+
+.btn-wpp:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.2);
+}
+
 body{
     margin: auto;
-    
+    min-width: 100vw;    
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    
 }
 
+/*-----------------HEADER------------------*/
+
 header{
-    width: 1200px;
+    padding-top: 20px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-header nav a {
-    padding: 8px;
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 0 2rem 0;
 }
+
+header nav{
+    display: flex;
+    gap: 20px;
+}
+
+header nav a{
+    color: #0A3A3C;
+    font-size: 14pt;
+    transition: all 0.5s;
+    padding: 0 3px 0 3px;
+    cursor: pointer;
+}
+
+header nav a:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    color:white;
+    background-color: #C9892F;
+    border-radius: 5px;
+}
+
+.btn-header{
+    width: 20   vw;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    font-size: 12pt;
+    color: white;
+    border-radius: 5px;
+    padding: 8px;
+    text-decoration: none;
+    background-color: #C9892F;
+    border-style: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn-header:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/*-----------------EXPERIÊNCIA------------------*/
 
 .experiencia{
     width: 100%;
@@ -48,6 +120,8 @@ header nav a {
     width: 50px;
 }
 
+/*-----------------BANNER------------------*/
+
 .banner{
     width: 100%;
     margin: auto;
@@ -58,10 +132,12 @@ header nav a {
     background-image: url("../img/fundo1.jpg");
     background-repeat: no-repeat;
     background-position: center center;
+    background-attachment: fixed;
 }
 
 .banner h1{
-    font-size: 30pt;
+    padding-top: 30px;
+    font-size: 45pt;
     color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgba(201, 137, 47, 1);
@@ -70,7 +146,7 @@ header nav a {
 
 .banner .subh1{
     margin-top: -10px;
-    font-size: 15pt;
+    font-size: 25pt;
     color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgba(201, 137, 47, 1);
@@ -78,15 +154,15 @@ header nav a {
 
 .banner h2{
     color: white;
-    font-size: 26pt;
-    font-weight: 300;
+    font-size: 40pt;
+    font-weight: 400;
 }
 
 .banner .subh2{
-    margin-top: -10px;
+    margin-top: -20px;
     color: white;
-    font-size: 32pt;
-    font-weight: 300;
+    font-size: 50pt;
+    font-weight: 400;
 }
 
 h2 span{
@@ -100,6 +176,490 @@ h2 span{
 }
 
 .banner .video{
-    margin: 20px 0 50px 0;
+    
+    margin: 20px 0 80px 0;
     box-shadow: 0px 0px 35px rgba(201, 137, 47, 1);
+    
+}
+
+
+/*-----------------TEMOS------------------*/
+
+.temos{
+    display:flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+.img-temos{
+    width: 130px;
+}
+
+.temos h3{
+    margin-top: 20px;
+    font-size: 22pt;
+    background-color: #e2e2e2;
+    color: #0A3A3C;
+    border-radius: 8px;
+    padding: 2px 10px 2px 10px;
+}
+
+.temos p{
+    margin-top: 10px;
+    font-size: 12pt;
+    font-weight: 400;
+    width: 50vw;
+    text-align: center;
+    background-color: #e2e2e2;
+    color: #0A3A3C;
+    border-radius: 8px;
+    padding: 2px 10px 2px 10px;
+}
+
+.porcas{
+    padding-top: 50px;
+    display: flex;
+    gap: 150px;
+
+}
+
+.porcas img{
+    width: 150px    ;
+}
+
+/*-----------------QUE TAL------------------*/
+
+.que-tal{
+    width: 100vw;
+    margin-top: 70px;
+    background-color: #C9892F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.que-tal .text{
+    width: 720px;
+    display: flex;
+    flex-direction: column;
+}
+
+.que-tal .text .p1{
+    color: #ffffff;
+    font-size: 35pt;
+    font-weight: 500;
+}
+
+.que-tal .text .p2{
+    margin-top: -30px;
+    color: #ffffff;
+    font-size: 45pt;
+    font-weight: 500;
+}
+
+.que-tal .text .p3{
+    margin-top: -10px;
+    color: #ffffff;
+    font-size: 15pt;
+    font-weight: 200;
+}
+
+.que-tal .text .p4{
+    margin-top: 25px;
+    color: #ffffff;
+    font-size: 18pt;
+    font-weight: 200;
+}
+
+
+.que-tal img{
+    width: 600px;
+}
+
+.que-tal .text button{
+    width: 25vw;
+    margin: 30px 0 0 0;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    font-size: 15pt;
+    color: white;
+    border-radius: 5px;
+    padding: 8px;
+    text-decoration: none;
+    background-color: #0A3A3C;
+    border-style: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.que-tal .text button:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/*-----------------SOMOS------------------*/
+
+.somos{
+    padding: 50px 0 50px 0;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F2F2;
+}
+
+.somos h3{
+    font-size: 45pt;
+    color:#0A3A3C;
+
+}
+
+.somos p{
+    text-align: center;
+    font-weight: 400;
+    width: 850px;
+    font-size: 17pt;
+    color: #C9892F;
+    padding-top: -20px;
+}
+
+.somos .titulo{
+    display: flex;
+    flex-direction: row;
+}
+
+.somos .titulo img{
+    width: 5vw;
+  
+}
+
+/*-----------------PRA QUEM------------------*/
+
+.pra-quem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pra-quem h3{
+    font-size: 45pt;
+    color:#0A3A3C;
+}
+
+.pra-quem p{
+    text-align: center;
+    font-weight: 400;
+    width: 950px;
+    font-size: 18pt;
+    color: #C9892F;
+    padding-top: -25    px;
+}
+
+.pra-quem p span{
+    font-weight: 500;
+    color:#0A3A3C;
+   
+}
+
+.pra-quem img{
+    width: 130px;
+    padding-top: 50px;
+}
+
+/*-----------------VOCÊ MERECE------------------*/
+
+.voce-merece{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 95px;
+    width: 100%;
+    background-color: #0A3A3C;
+    padding-bottom: 50px;
+}
+
+.voce-merece .img-medalha{
+    margin-top: -42px;
+    width: 8vw;
+}
+
+.voce-merece h3{
+    padding-top: 20px;
+    font-size: 35pt;
+    font-weight: 500;
+    color: #C9892F;
+}
+
+.voce-merece .tabelas{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.voce-merece .tabela1{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin-top:80px;
+    justify-items: start;    
+    grid-template-columns: 1fr 8fr;
+    row-gap: 80px;
+
+}
+
+.voce-merece .tabela1 p{
+    color: #ffffff;
+}
+
+.voce-merece .tabela1 img{
+    width: 7vw;
+}
+
+.voce-merece .tabela2{
+    width: 30%;
+    margin-top:80px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 8fr;
+    row-gap: 80px;
+    column-gap: 25px;
+
+}
+
+.voce-merece .tabela2 p{
+    color: #ffffff;
+}
+
+.voce-merece .tabela2 img{
+    width: 6vw;
+}
+
+.voce-merece .tabelas p span{
+    text-decoration: underline #C9892F;
+}
+
+/*-----------------MAIS DE------------------*/
+
+.mais{
+    width: 100%;
+    background-image: url("../img/fundo-multidao.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    margin: 50px 0 50px 0;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0 80px 0;
+}
+
+.mais h3{
+    font-size: 45pt;
+    color: #0A3A3C;
+
+}
+
+.mais p{
+    margin-top: -20px;
+    font-size: 30pt;
+    color: #0A3A3C;
+}
+
+/*-----------------GRANDE HISTORIA------------------*/
+
+.grande-historia h3{
+    margin-top: 50px;
+    text-align: center;
+    line-height: 55px;
+    font-size: 45pt;
+    color: #0A3A3C;
+}
+
+.grande-historia img{
+    width: 100%;
+    margin-top: -120px;
+}
+
+.grande-historia p {
+    width: 90vw;
+    margin: auto;
+    font-size: 22pt;
+    margin-top: -120px;
+    color: #0A3A3C;
+    text-align: center;
+    font-weight: 500;
+}
+
+/*-----------------MAIOR MARGEM------------------*/
+
+.maior-margem{
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9e8e8;
+    padding: 40px 40px 60px 40px;
+    border-radius: 40px;
+}
+
+.maior-margem h3{
+    font-size: 45pt;
+    color: #0A3A3C;
+}
+
+.maior-margem .ate150 {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+
+}
+
+.maior-margem .ate150 p{
+    font-size: 90pt;
+    font-weight: 800;
+    color: #C9892F;
+}
+
+.maior-margem .ate150 span{
+    font-size: 20pt;
+    font-weight: 500;
+    color: #0A3A3C;
+}
+
+.maior-margem .p2{
+    text-align: center;
+    color: #0A3A3C;
+    font-size: 17pt;
+    font-weight: 600;
+    width: 70vw;
+}
+
+.maior-margem .p2 span{
+    color: #C9892F;
+}
+
+.btn-quero-receber{
+    width: 30vw;
+    height: 6vh;
+    font-size: 15pt;
+    margin: 50px 0 50px 0;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    color: white;
+    border-radius: 15px;
+    padding: 8px;
+    text-decoration: none;
+    background-color: #049b04;
+    border-style: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn-quero-receber:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/*-----------------MERCADO NA MIDIA------------------*/
+
+.mercado-midia {
+    width: 100vw;
+    background-color: #0A3A3C;
+    margin-top: 50px;
+    text-align: center;
+    color: #C9892F;
+    font-size: 45pt;
+    font-weight: 700;
+}
+
+/*-----------------TRABALHE COM------------------*/
+
+.trabalhe h3{
+    color: #0A3A3C;
+    padding: 60px 0 60px 0;
+    font-size: 38pt;
+    font-weight: 700;
+    text-align: center;
+    
+}
+
+.trabalhe .marcas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 90vw;
+    margin: auto;
+}
+
+.trabalhe .marcas img{
+    width: 15vw;
+}
+
+/*-----------------PREMIADA------------------*/
+
+.premiada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    margin: 50px 0 50px 0;  
+    background-color: #dddddd;
+    border-radius: 40px;
+    width: 80%;
+    margin: auto;
+    margin-top: 90px;
+    padding-bottom: 50px;
+}
+
+.premiada .icon{
+    padding: 50px 0 0 0;
+    width: 5vw;
+
+}
+
+.premiada h3{
+    padding: 0 0 50px 0;
+}
+
+.premiada .conteudo{
+    display: flex;
+    padding: 0 70px 50px 70px;
+    
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.premiada .conteudo .text{
+    color: #0A3A3C;
+    text-align: left;
+    font-size: 15pt;
+    font-weight: 500;
+    line-height: 30px;
+    width: 35vw;
+    
+    
+}
+
+.premiada .conteudo img{
+    width: 30vw;
+}
+
+.premiada .conteudo .text span{
+    color:#ffffff;
+    padding: 0 8px 0 8px;
+    background-color: #C9892F;
 }
