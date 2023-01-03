@@ -316,7 +316,8 @@ h2 span{
 }
 
 .somos h3{
-    font-size: 45pt;
+    margin-left: 20px;
+    font-size: 30pt;
     color:#0A3A3C;
 
 }
@@ -350,7 +351,7 @@ h2 span{
 }
 
 .pra-quem h3{
-    font-size: 45pt;
+    font-size: 30pt;
     color:#0A3A3C;
 }
 
@@ -394,7 +395,7 @@ h2 span{
 
 .voce-merece h3{
     padding-top: 20px;
-    font-size: 35pt;
+    font-size: 30pt;
     font-weight: 500;
     color: #C9892F;
 }
@@ -586,12 +587,21 @@ h2 span{
     font-weight: 700;
 }
 
+.mercado-midia h3{
+    font-size: 35pt;
+    padding: 20px;
+}
+
 /*-----------------TRABALHE COM------------------*/
+
+.trabalhe{
+    width: 60vw;
+}
 
 .trabalhe h3{
     color: #0A3A3C;
     padding: 60px 0 60px 0;
-    font-size: 38pt;
+    font-size: 30pt;
     font-weight: 700;
     text-align: center;
     
@@ -615,40 +625,39 @@ h2 span{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:center;
-    margin: 50px 0 50px 0;  
-    background-color: #dddddd;
-    border-radius: 40px;
-    width: 80%;
-    margin: auto;
-    margin-top: 90px;
+    justify-content:space-evenly;    
+    background-color: #dddddd;    
+    width: 100%;
+    margin-top: 90px ;    
     padding-bottom: 50px;
 }
 
 .premiada .icon{
     padding: 50px 0 0 0;
-    width: 5vw;
+    width: 4vw;
 
 }
 
 .premiada h3{
     padding: 0 0 50px 0;
+    color: #0A3A3C;
+    font-size: 30pt;
 }
 
 .premiada .conteudo{
     display: flex;
-    padding: 0 70px 50px 70px;
-    
+    width: 77%;
+    padding: 0 40px 50px 40px;    
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .premiada .conteudo .text{
     color: #0A3A3C;
     text-align: left;
-    font-size: 15pt;
+    font-size: 25pt;
     font-weight: 500;
-    line-height: 30px;
+    line-height: 45px;
     width: 35vw;
     
     
@@ -662,4 +671,224 @@ h2 span{
     color:#ffffff;
     padding: 0 8px 0 8px;
     background-color: #C9892F;
+}
+
+/*-----------------SER FRANQUEADO------------------*/
+
+.ser-franqueado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #0A3A3C;
+    width: 100%;
+    height: 100%;
+
+}
+
+.ser-franqueado h3{    
+    font-size: 30pt;
+    font-weight: 500;
+    padding-top: 50px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.ser-franqueado .squares{
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    
+}
+
+.ser-franqueado .squares .line1{
+    display: grid;
+    grid-template-columns: 4fr 1fr 4fr  ;    
+    justify-content: start;    
+    width: 100%;    
+    column-gap: 30px;
+}
+
+.ser-franqueado .squares .line1 .square1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#ffffff;    
+    width: 16vw;
+    height: 8vh;
+    border-radius: 3px;
+    margin-bottom: 50px;  
+    margin-top: -10px;
+
+}
+
+.ser-franqueado .squares .line1 .rolagem1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+.ser-franqueado .squares .line1 .rolagem1 .circle1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:#C9892F;
+    width: 40px;
+    height: 40px; 
+    border-radius: 50%;
+    
+    color: #ffffff;
+    font-size: 20pt;
+    text-align: center;
+    box-shadow: 1px 5px 5px #041718 ;
+
+}
+
+.ser-franqueado .squares .line1 .rolagem1 .traco1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C9892F;
+    width: 5px;
+    height: 10vh;
+}
+
+
+
+.ser-franqueado .squares .line1 p{
+    text-align: center;
+    color:#0A3A3C;
+    font-size: 17pt;
+    font-weight: 400;
+}
+
+.ser-franqueado .squares .line2{
+    display: grid;
+    grid-template-columns: 4fr 1fr 4fr;  
+    justify-content: start;
+    width: 100%;
+    column-gap: 30px;
+    
+}
+
+.phantom-square{
+    width: 16vw;
+    height: 8vh;
+}
+
+.ser-franqueado .squares .line2 .square2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#ffffff;    
+    width: 16vw;
+    height: 8vh;
+    border-radius: 3px;
+    margin-bottom: 50px;  
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.ser-franqueado .squares .line2 .rolagem2{
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+
+}
+
+    
+
+.traco22{
+    width: 5px;
+    height: 1.4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C9892F;
+}
+
+.ser-franqueado .squares .line2 .rolagem2 .circle2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:#C9892F;
+    width: 40px;
+    height: 40px; 
+    border-radius: 50%;    
+    color: #ffffff;
+    font-size: 20pt;
+    text-align: center;
+    box-shadow: 1px 5px 5px #041718 ;
+}
+
+.ser-franqueado .squares .line2 .rolagem2 .traco2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C9892F;
+    width: 5px;
+    height: 10vh;
+}
+
+.ser-franqueado .squares .line2 p{
+    text-align: center;
+    color:#0A3A3C;
+    font-size: 17pt;
+    font-weight: 400;
+}
+
+.inauguracao{
+    display: flex;
+    margin: auto; 
+    align-items: center;
+    justify-content: center;   
+    background-color:#C9892F;
+    padding: 20px;
+    margin-bottom: 70px;
+    border-radius: 4px;
+    width: 60%;
+}
+.inauguracao p{
+    text-align: center;
+    color:#ffffff;
+    font-size: 25pt;
+    font-weight: 500;
+    
+}
+
+.seja{
+    padding: 70px;
+}
+
+.seja p{
+    font-size: 20pt;
+    font-weight: 500;
+    color: #0A3A3C;
+}
+
+footer{
+    background-color: #F2F2F2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+footer img{
+    width: 10vw;
+
 }
