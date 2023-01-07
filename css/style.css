@@ -18,7 +18,7 @@
 }
 
 .btn-wpp{
-    width: 70px;
+    width: 120px;
     transition: all 0.5s;
     cursor: pointer;    
        
@@ -170,7 +170,9 @@ h2 span{
 }
 
 .subh2 span{
-    background-image: url("../img/mancha.png");
+    width: 650px;
+    text-align: left;
+    background-image: url("../img/rolo.png");
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -192,16 +194,17 @@ h2 span{
     align-items: center;
     justify-content: center;
     padding-top: 70px;
+    margin-bottom: 170px;
 }
 
 .img-temos{
-    width: 130px;
+    width: 90px;
 }
 
 .temos h3{
     margin-top: 20px;
-    font-size: 22pt;
-    background-color: #e2e2e2;
+    font-size: 28pt;
+
     color: #0A3A3C;
     border-radius: 8px;
     padding: 2px 10px 2px 10px;
@@ -209,11 +212,11 @@ h2 span{
 
 .temos p{
     margin-top: 10px;
-    font-size: 12pt;
+    font-size: 17pt;
     font-weight: 400;
-    width: 50vw;
+    width: 60vw;
     text-align: center;
-    background-color: #e2e2e2;
+    
     color: #0A3A3C;
     border-radius: 8px;
     padding: 2px 10px 2px 10px;
@@ -227,19 +230,21 @@ h2 span{
 }
 
 .porcas img{
-    width: 150px    ;
+    width: 200px;
+    
 }
 
 /*-----------------QUE TAL------------------*/
 
 .que-tal{
     width: 100vw;
-    margin-top: 70px;
+    
     background-color: #C9892F;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
+    
 
 }
 
@@ -278,7 +283,9 @@ h2 span{
 
 
 .que-tal img{
-    width: 600px;
+    width: 800px;
+    margin-top: -80px;
+    
 }
 
 .que-tal .text button{
@@ -307,17 +314,21 @@ h2 span{
 .somos{
     padding: 50px 0 50px 0;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #F2F2F2;
+    background-image: url("/img/expansao.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 .somos h3{
     margin-left: 20px;
-    font-size: 30pt;
+    font-size: 35pt;
     color:#0A3A3C;
 
 }
@@ -325,8 +336,8 @@ h2 span{
 .somos p{
     text-align: center;
     font-weight: 400;
-    width: 850px;
-    font-size: 17pt;
+    width: 800px;
+    font-size: 20pt;
     color: #C9892F;
     padding-top: -20px;
 }
@@ -334,11 +345,21 @@ h2 span{
 .somos .titulo{
     display: flex;
     flex-direction: row;
+    margin-bottom: 15px;
+    
+}
+
+.somos .titulo h3{
+    padding-top: 31px;
 }
 
 .somos .titulo img{
     width: 5vw;
   
+}
+
+.somos img{
+    width: 40vw;
 }
 
 /*-----------------PRA QUEM------------------*/
@@ -406,6 +427,20 @@ h2 span{
 
 }
 
+.voce-merece .tabelas .tabela1 .icon1,
+.tabela2 .icon1{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.voce-merece .tabelas .tabela1 .icon1 img,
+.voce-merece .tabelas .tabela2 .icon1 img{
+    width: 3vw;
+    padding: 8px;
+}
+
 .voce-merece .tabela1{
     display: grid;
     justify-content: center;
@@ -420,6 +455,11 @@ h2 span{
 
 .voce-merece .tabela1 p{
     color: #ffffff;
+    border-width:2px;
+    border-color: #C9892F;
+    border-style:solid;
+    padding: 10px;
+    border-radius: 8px;
 }
 
 .voce-merece .tabela1 img{
@@ -440,6 +480,11 @@ h2 span{
 
 .voce-merece .tabela2 p{
     color: #ffffff;
+    border-width:2px;
+    border-color: #C9892F;
+    border-style:solid;
+    padding: 10px;
+    border-radius: 8px; 
 }
 
 .voce-merece .tabela2 img{
@@ -458,7 +503,7 @@ h2 span{
     background-repeat: no-repeat;
     background-position: center center;
 
-    margin: 50px 0 50px 0;
+    
     
     display: flex;
     flex-direction: column;
@@ -481,28 +526,53 @@ h2 span{
 
 /*-----------------GRANDE HISTORIA------------------*/
 
-.grande-historia h3{
-    margin-top: 50px;
+
+.grande-historia{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color:#c9892f;
+
+}
+
+.grande-historia .texto{
+    padding-left: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 70px;
+}
+
+.grande-historia .texto h3{
+
     text-align: center;
-    line-height: 55px;
-    font-size: 45pt;
-    color: #0A3A3C;
+    
+    font-size: 28pt;
+    text-align: left;
+    color: #ffffff;
+    line-height: 40px;
+}
+
+.grande-historia .texto p{
+    text-align: center;
+    font-size: 15pt;
+    text-align: left;
+    color: #ffffff;
+    line-height: 22px;
+    margin-top: 15px;
+    
 }
 
 .grande-historia img{
-    width: 100%;
-    margin-top: -120px;
+    width: 900px;
+    
 }
 
-.grande-historia p {
-    width: 90vw;
-    margin: auto;
-    font-size: 22pt;
-    margin-top: -120px;
-    color: #0A3A3C;
-    text-align: center;
-    font-weight: 500;
-}
+
+
+
 
 /*-----------------MAIOR MARGEM------------------*/
 
@@ -626,7 +696,9 @@ h2 span{
     flex-direction: column;
     align-items: center;
     justify-content:space-evenly;    
-    background-color: #dddddd;    
+    background-image: url("../img/fundo-premio.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     margin-top: 90px ;    
     padding-bottom: 50px;
@@ -641,7 +713,7 @@ h2 span{
 .premiada h3{
     padding: 0 0 50px 0;
     color: #0A3A3C;
-    font-size: 30pt;
+    font-size: 40pt;
 }
 
 .premiada .conteudo{
@@ -655,10 +727,13 @@ h2 span{
 .premiada .conteudo .text{
     color: #0A3A3C;
     text-align: left;
-    font-size: 25pt;
+    font-size: 20pt;
     font-weight: 500;
     line-height: 45px;
-    width: 35vw;
+    width: 40vw;
+    background-color: #ffffff80;
+    border-radius: 20px;
+    padding: 15px;
     
     
 }
@@ -681,6 +756,7 @@ h2 span{
     justify-content: center;
     align-items: center;
     margin: auto;
+    
     background-color: #0A3A3C;
     width: 100%;
     height: 100%;
@@ -739,12 +815,12 @@ h2 span{
     align-items: center;
     justify-content: center;
     background-color:#C9892F;
-    width: 40px;
-    height: 40px; 
+    width: 80px;
+    height: 80px; 
     border-radius: 50%;
     
     color: #ffffff;
-    font-size: 20pt;
+    font-size: 18pt;
     text-align: center;
     box-shadow: 1px 5px 5px #041718 ;
 
@@ -766,6 +842,36 @@ h2 span{
     color:#0A3A3C;
     font-size: 17pt;
     font-weight: 400;
+}
+
+.betoneira-icon{
+    width: 150px;
+    align-self: center;
+    justify-self: center;
+}
+
+.furadeira-icon{
+    width: 150px;
+    align-self: center;
+    justify-self: center;
+}
+
+.martelete-icon{
+    width: 130px;
+    align-self: center;
+    justify-self: center;
+}
+
+.esmerilhadeira-icon{
+    width: 190px;
+    align-self:flex-start;
+    justify-self:center;
+}
+
+.prumo-icon{
+    width: 150px;
+    align-self:flex-start;
+    justify-self:center;
 }
 
 .ser-franqueado .squares .line2{
@@ -824,11 +930,11 @@ h2 span{
     align-items: center;
     justify-content: center;
     background-color:#C9892F;
-    width: 40px;
-    height: 40px; 
+    width: 60px;
+    height: 60px; 
     border-radius: 50%;    
     color: #ffffff;
-    font-size: 20pt;
+    font-size: 14pt;
     text-align: center;
     box-shadow: 1px 5px 5px #041718 ;
 }
@@ -865,6 +971,7 @@ h2 span{
     color:#ffffff;
     font-size: 25pt;
     font-weight: 500;
+    line-height: 35px;
     
 }
 
