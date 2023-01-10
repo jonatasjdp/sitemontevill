@@ -99,6 +99,10 @@ header nav a:hover{
     transform: scale(1.1);
 }
 
+header img{
+    width: 15vw;
+}
+
 /*-----------------EXPERIÊNCIA------------------*/
 
 .experiencia{
@@ -110,7 +114,7 @@ header nav a:hover{
     justify-content: center; 
     padding: 20px;
     margin: 30px 0 30px 0;
-    font-size: 25pt;
+    font-size: 2vw;
     font-style: italic;
     font-weight: 500;
 }
@@ -137,7 +141,7 @@ header nav a:hover{
 
 .banner h1{
     padding-top: 30px;
-    font-size: 45pt;
+    font-size: 3.5vw;
     color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgba(201, 137, 47, 1);
@@ -146,7 +150,7 @@ header nav a:hover{
 
 .banner .subh1{
     margin-top: -10px;
-    font-size: 25pt;
+    font-size: 2vw;
     color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgba(201, 137, 47, 1);
@@ -154,14 +158,14 @@ header nav a:hover{
 
 .banner h2{
     color: white;
-    font-size: 40pt;
+    font-size: 4.8vw;
     font-weight: 400;
 }
 
 .banner .subh2{
     margin-top: -20px;
     color: white;
-    font-size: 50pt;
+    font-size: 5vw;
     font-weight: 400;
 }
 
@@ -203,7 +207,8 @@ h2 span{
 
 .temos h3{
     margin-top: 20px;
-    font-size: 28pt;
+    font-size: 2.7vw;
+    text-align: center;
 
     color: #0A3A3C;
     border-radius: 8px;
@@ -212,7 +217,7 @@ h2 span{
 
 .temos p{
     margin-top: 10px;
-    font-size: 17pt;
+    font-size: 1.6vw;
     font-weight: 400;
     width: 60vw;
     text-align: center;
@@ -252,32 +257,33 @@ h2 span{
     width: 720px;
     display: flex;
     flex-direction: column;
+    padding-left: 50px;
 }
 
 .que-tal .text .p1{
     color: #ffffff;
-    font-size: 35pt;
+    font-size: 3vw;
     font-weight: 500;
 }
 
 .que-tal .text .p2{
-    margin-top: -30px;
+    margin-top: -18px;
     color: #ffffff;
-    font-size: 45pt;
+    font-size: 3.2vw;
     font-weight: 500;
 }
 
 .que-tal .text .p3{
     margin-top: -10px;
     color: #ffffff;
-    font-size: 15pt;
+    font-size: 1.5vw;
     font-weight: 200;
 }
 
 .que-tal .text .p4{
     margin-top: 25px;
     color: #ffffff;
-    font-size: 18pt;
+    font-size: 1.8vw;
     font-weight: 200;
 }
 
@@ -289,7 +295,7 @@ h2 span{
 }
 
 .que-tal .text button{
-    width: 25vw;
+    width: 22vw;
     margin: 30px 0 0 0;
     font-family: 'Kanit', sans-serif;
     font-weight: 500;
@@ -307,6 +313,10 @@ h2 span{
 .que-tal .text button:hover{
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+}
+
+.que-tal .text button a{
+    font-size: 1.2vw;
 }
 
 /*-----------------SOMOS------------------*/
@@ -328,7 +338,7 @@ h2 span{
 
 .somos h3{
     margin-left: 20px;
-    font-size: 35pt;
+    font-size: 2.8vw;
     color:#0A3A3C;
 
 }
@@ -337,7 +347,7 @@ h2 span{
     text-align: center;
     font-weight: 400;
     width: 800px;
-    font-size: 20pt;
+    font-size: 1.5vw;
     color: #C9892F;
     padding-top: -20px;
 }
@@ -354,7 +364,7 @@ h2 span{
 }
 
 .somos .titulo img{
-    width: 5vw;
+    width: 10vw;
   
 }
 
@@ -372,7 +382,7 @@ h2 span{
 }
 
 .pra-quem h3{
-    font-size: 30pt;
+    font-size: 2.5vw;
     color:#0A3A3C;
 }
 
@@ -380,7 +390,7 @@ h2 span{
     text-align: center;
     font-weight: 400;
     width: 950px;
-    font-size: 18pt;
+    font-size: 1.4vw;
     color: #C9892F;
     padding-top: -25    px;
 }
@@ -392,7 +402,7 @@ h2 span{
 }
 
 .pra-quem img{
-    width: 130px;
+    max-width: 8vw;
     padding-top: 50px;
 }
 
@@ -416,7 +426,7 @@ h2 span{
 
 .voce-merece h3{
     padding-top: 20px;
-    font-size: 30pt;
+    font-size: 2.5vw;
     font-weight: 500;
     color: #C9892F;
 }
@@ -460,6 +470,7 @@ h2 span{
     border-style:solid;
     padding: 10px;
     border-radius: 8px;
+    font-size: 0.8vw;
 }
 
 .voce-merece .tabela1 img{
@@ -485,6 +496,7 @@ h2 span{
     border-style:solid;
     padding: 10px;
     border-radius: 8px; 
+    font-size: 0.8vw;
 }
 
 .voce-merece .tabela2 img{
@@ -502,6 +514,7 @@ h2 span{
     background-image: url("../img/fundo-multidao.png");
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: cover;
 
     
     
@@ -513,14 +526,14 @@ h2 span{
 }
 
 .mais h3{
-    font-size: 45pt;
+    font-size: 3.5vw;
     color: #0A3A3C;
 
 }
 
 .mais p{
     margin-top: -20px;
-    font-size: 30pt;
+    font-size: 2.8vw;
     color: #0A3A3C;
 }
 
@@ -531,7 +544,9 @@ h2 span{
     margin-top: 80px;
     display: flex;
     flex-direction: row;
-    width: 100%;
+    justify-content: space-between;
+    column-gap: 35px;
+    max-width: 255vw;
     background-color:#c9892f;
 
 }
@@ -542,14 +557,15 @@ h2 span{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-right: 70px;
+    
+    max-width: 600px;
 }
 
 .grande-historia .texto h3{
 
     text-align: center;
     
-    font-size: 28pt;
+    font-size: 2.2vw;
     text-align: left;
     color: #ffffff;
     line-height: 40px;
@@ -557,7 +573,7 @@ h2 span{
 
 .grande-historia .texto p{
     text-align: center;
-    font-size: 15pt;
+    font-size: 1.1vw;
     text-align: left;
     color: #ffffff;
     line-height: 22px;
@@ -840,8 +856,9 @@ h2 span{
 .ser-franqueado .squares .line1 p{
     text-align: center;
     color:#0A3A3C;
-    font-size: 17pt;
+    font-size: 1.3vw;
     font-weight: 400;
+    padding: 10px;
 }
 
 .betoneira-icon{
@@ -951,8 +968,9 @@ h2 span{
 .ser-franqueado .squares .line2 p{
     text-align: center;
     color:#0A3A3C;
-    font-size: 17pt;
+    font-size: 1.3vw;
     font-weight: 400;
+    padding: 10px;
 }
 
 .inauguracao{
