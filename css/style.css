@@ -7,6 +7,7 @@
     text-decoration: none;
     font-family: 'Kanit', sans-serif;
     
+    
 }
 
 .link-wpp{
@@ -31,8 +32,7 @@
 
 body{
     margin: auto;
-    min-width: 100vw;    
-    min-height: 100vh;
+    max-width: 1600px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,7 +46,8 @@ header{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    
 }
 
 main{
@@ -80,10 +81,10 @@ header nav a:hover{
 }
 
 .btn-header{
-    width: 20   vw;
+    width: min(20vw, 250px);
     font-family: 'Kanit', sans-serif;
     font-weight: 500;
-    font-size: 12pt;
+    font-size: max(0.5vw, 8pt);
     color: white;
     border-radius: 5px;
     padding: 8px;
@@ -141,7 +142,7 @@ header img{
 
 .banner h1{
     padding-top: 30px;
-    font-size: 3.5vw;
+    font-size: min(3.5vw, 45pt);
     color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgba(201, 137, 47, 1);
@@ -150,7 +151,7 @@ header img{
 
 .banner .subh1{
     margin-top: -10px;
-    font-size: 2vw;
+    font-size: min(2vw, 30pt);
     color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgba(201, 137, 47, 1);
@@ -158,14 +159,14 @@ header img{
 
 .banner h2{
     color: white;
-    font-size: 4.8vw;
+    font-size: min(4.8vw, 50pt);
     font-weight: 400;
 }
 
 .banner .subh2{
     margin-top: -20px;
     color: white;
-    font-size: 5vw;
+    font-size: min(4.8vw, 50pt);
     font-weight: 400;
 }
 
@@ -207,7 +208,7 @@ h2 span{
 
 .temos h3{
     margin-top: 20px;
-    font-size: 2.7vw;
+    font-size: min(2.7vw,30pt);
     text-align: center;
 
     color: #0A3A3C;
@@ -217,7 +218,7 @@ h2 span{
 
 .temos p{
     margin-top: 10px;
-    font-size: 1.6vw;
+    font-size: min(1.6vw,20pt);
     font-weight: 400;
     width: 60vw;
     text-align: center;
@@ -228,48 +229,51 @@ h2 span{
 }
 
 .porcas{
-    padding-top: 50px;
+    padding: 50px;
     display: flex;
-    gap: 150px;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
 
 }
 
 .porcas img{
-    width: 200px;
+    width: 20%;
     
 }
 
 /*-----------------QUE TAL------------------*/
 
 .que-tal{
-    width: 100vw;
-    
+    width: 100%;    
     background-color: #C9892F;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
     
 
 }
 
 .que-tal .text{
-    width: 720px;
+    max-width: 1600px;
     display: flex;
     flex-direction: column;
-    padding-left: 50px;
+    padding-left: 100px;
+
 }
 
 .que-tal .text .p1{
     color: #ffffff;
-    font-size: 3vw;
+    font-size: 2vw;
     font-weight: 500;
+   
 }
 
 .que-tal .text .p2{
-    margin-top: -18px;
+    margin-top: -12px;
     color: #ffffff;
-    font-size: 3.2vw;
+    font-size: 2.5vw;
     font-weight: 500;
 }
 
@@ -281,22 +285,23 @@ h2 span{
 }
 
 .que-tal .text .p4{
+    width: 30vw;
     margin-top: 25px;
     color: #ffffff;
-    font-size: 1.8vw;
+    font-size: min(1.4vw, 14pt);
     font-weight: 200;
 }
 
 
 .que-tal img{
-    width: 800px;
+    width: 65%;
     margin-top: -80px;
     
 }
 
 .que-tal .text button{
     width: 22vw;
-    margin: 30px 0 0 0;
+    margin: 30px 0 20px 0;
     font-family: 'Kanit', sans-serif;
     font-weight: 500;
     font-size: 15pt;
@@ -332,13 +337,13 @@ h2 span{
     background-color: #F2F2F2;
     background-image: url("/img/expansao.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     
 }
 
 .somos h3{
     margin-left: 20px;
-    font-size: 2.8vw;
+    font-size: min(5vw, 35pt) ;
     color:#0A3A3C;
 
 }
@@ -346,8 +351,8 @@ h2 span{
 .somos p{
     text-align: center;
     font-weight: 400;
-    width: 800px;
-    font-size: 1.5vw;
+    width: 50%;
+    font-size: min(3.5vw, 15pt);
     color: #C9892F;
     padding-top: -20px;
 }
@@ -364,12 +369,12 @@ h2 span{
 }
 
 .somos .titulo img{
-    width: 10vw;
+    max-width: 130px;
   
 }
 
 .somos img{
-    width: 40vw;
+    width: 40%;
 }
 
 /*-----------------PRA QUEM------------------*/
@@ -379,20 +384,22 @@ h2 span{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .pra-quem h3{
-    font-size: 2.5vw;
+    font-size: min(3vw, 35pt);
     color:#0A3A3C;
+    text-align: center;
 }
 
 .pra-quem p{
     text-align: center;
     font-weight: 400;
-    width: 950px;
-    font-size: 1.4vw;
+    width: max(50vw, 20pt);
+    font-size: min(1.4vw, 25pt);
     color: #C9892F;
-    padding-top: -25    px;
+    padding-top: -25px;
 }
 
 .pra-quem p span{
@@ -421,12 +428,12 @@ h2 span{
 
 .voce-merece .img-medalha{
     margin-top: -42px;
-    width: 8vw;
+    width: max(8vw, 100px);
 }
 
 .voce-merece h3{
     padding-top: 20px;
-    font-size: 2.5vw;
+    font-size: min(2.5vw, 35pt);
     font-weight: 500;
     color: #C9892F;
 }
@@ -546,7 +553,7 @@ h2 span{
     flex-direction: row;
     justify-content: space-between;
     column-gap: 35px;
-    max-width: 255vw;
+    width: 100%;
     background-color:#c9892f;
 
 }
@@ -557,8 +564,7 @@ h2 span{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
-    max-width: 600px;
+    width: 50%;
 }
 
 .grande-historia .texto h3{
@@ -582,7 +588,7 @@ h2 span{
 }
 
 .grande-historia img{
-    width: 900px;
+    width: 50%;
     
 }
 
@@ -604,7 +610,7 @@ h2 span{
 }
 
 .maior-margem h3{
-    font-size: 45pt;
+    font-size: min(4vw, 30pt);
     color: #0A3A3C;
 }
 
@@ -612,17 +618,18 @@ h2 span{
     display: flex;
     align-items: baseline;
     gap: 10px;
+    
 
 }
 
 .maior-margem .ate150 p{
-    font-size: 90pt;
+    font-size: min(8vw, 90pt);
     font-weight: 800;
     color: #C9892F;
 }
 
 .maior-margem .ate150 span{
-    font-size: 20pt;
+    font-size: min(3vw, 20pt);
     font-weight: 500;
     color: #0A3A3C;
 }
@@ -630,9 +637,9 @@ h2 span{
 .maior-margem .p2{
     text-align: center;
     color: #0A3A3C;
-    font-size: 17pt;
+    font-size: min(3vw, 17pt);
     font-weight: 600;
-    width: 70vw;
+    width: 70%;
 }
 
 .maior-margem .p2 span{
@@ -674,7 +681,7 @@ h2 span{
 }
 
 .mercado-midia h3{
-    font-size: 35pt;
+    font-size: min(5vw, 35pt);
     padding: 20px;
 }
 
@@ -687,7 +694,7 @@ h2 span{
 .trabalhe h3{
     color: #0A3A3C;
     padding: 60px 0 60px 0;
-    font-size: 30pt;
+    font-size: min(5vw, 35pt);
     font-weight: 700;
     text-align: center;
     
@@ -715,14 +722,22 @@ h2 span{
     background-image: url("../img/fundo-premio.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    width: 100%;    
     margin-top: 90px ;    
     padding-bottom: 50px;
 }
 
+.premiada-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
 .premiada .icon{
     padding: 50px 0 0 0;
-    width: 4vw;
+    width: 6%;
 
 }
 
@@ -734,19 +749,20 @@ h2 span{
 
 .premiada .conteudo{
     display: flex;
-    width: 77%;
+    width: 75%;
     padding: 0 40px 50px 40px;    
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 100px;
 }
 
 .premiada .conteudo .text{
     color: #0A3A3C;
     text-align: left;
-    font-size: 20pt;
+    font-size: min(3vw, 14pt);
     font-weight: 500;
-    line-height: 45px;
-    width: 40vw;
+    line-height: 30px;
+    max-width: 700px;
     background-color: #ffffff80;
     border-radius: 20px;
     padding: 15px;
@@ -755,7 +771,7 @@ h2 span{
 }
 
 .premiada .conteudo img{
-    width: 30vw;
+    width: 40%;
 }
 
 .premiada .conteudo .text span{
@@ -859,6 +875,7 @@ h2 span{
     font-size: 1.3vw;
     font-weight: 400;
     padding: 10px;
+    line-height: 25px;
 }
 
 .betoneira-icon{
