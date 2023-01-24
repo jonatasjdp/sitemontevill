@@ -6,7 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="">
-    <title>Montevill</title>
+    <title>Montevill Equipamentos</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1230422414557466');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1230422414557466&ev=PageView&noscript=1"
+  /></noscript>
+
 </head>
 
 <body>
@@ -16,20 +40,21 @@
 
     <header>
         <nav>
-            <a>Início</a>
+            <a href="#home">Início</a>
             <a>Lucro</a>
             <a>Contato</a>
         </nav>
 
         <img src="img/logo01.png" alt="logo">
 
-        <button class="btn-header"><a>RECEBER A APRESENTAÇÃO AGORA!</a></button>
+        <button class="btn-header"><a href="https://api.whatsapp.com/send?phone=558892410762&text=Quero%20Saber%20Mais%20Sobre%20a%20Franquia%20de%20Equipamentos" target="_blank">RECEBER A APRESENTAÇÃO AGORA!</a></button>
 
     </header>
 
     <main>
-        <div class="experiencia">
-            35 anos de experiência em máquinas!
+        <div class="experiencia" >
+            <p>35 anos de experiência em máquinas!</p>
+            
             <img src="img/medalha.png">
         </div>
 
@@ -53,71 +78,74 @@
             </p>
 
             <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/GrbYSr9Dg_M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <button class="btn-video"><a href="https://api.whatsapp.com/send?phone=558892410762&text=Quero%20Saber%20Mais%20Sobre%20a%20Franquia%20de%20Equipamentos" target="_blank">RECEBER A APRESENTAÇÃO AGORA!</a></button>
         </div>
 
         <div class="temos">
-            <img class="img-temos" src="img/dinheiro.png" alt="dinheiro">
-            <h3>
+            <img data-aos="fade-up" class="img-temos" src="img/dinheiro.png" alt="dinheiro">
+            <h3 data-aos="zoom-in">
                 Temos o investimento mais barato do Brasil no segmento!
             </h3>
 
-            <p>
+            <p data-aos="zoom-in">
                 A franquia Montevill Equipamentos se destaca dos concorrentes por permitir que seus empreendedores franqueados possam iniciar operação com baixo investimento e crescer com o próprio faturamento da loja.
             </p>
 
             <div class="porcas">
-                <img src="img/equip1.png" alt="porca">
-                <img src="img/equip2.png" alt="porca">
-                <img src="img/equip3.png" alt="porca">
+                <img src="img/equip1.png" alt="porca"  data-aos="fade-up" data-aos-duration="600">
+                <img src="img/equip2.png" alt="porca" data-aos="fade-up" data-aos-duration="900">
+                <img src="img/equip3.png" alt="porca" data-aos="fade-up" data-aos-duration="1200">
             </div>
         </div>
 
         <div class="que-tal">
             <div class="text">
-                <p class="p1">
+                <p class="p1" data-aos="zoom-in">
                     QUER VENDER OU ALUGAR?
                 </p>
                 
-                <p class="p2">
+                <p class="p2" data-aos="zoom-in">
                     E QUE TAL OS DOIS?!
                 </p>
 
-                <p class="p3">
+                <p class="p3" data-aos="zoom-in">
                     A sua identificação é o que vale!
                 </p>
 
-                <p class="p4">
+                <p class="p4" data-aos="zoom-in">
                     Conosco você consegue aumentar a margem de lucro atendendo todos os públicos, vendendo e/ou alugando máquinas.
                 </p>
 
-                <button id="btn-que-tal">
-                    <a>RECEBER A APRESENTAÇÃO AGORA!</a>
+                <button id="btn-que-tal" data-aos="zoom-in" >
+                    <a href="https://api.whatsapp.com/send?phone=558892410762&text=Quero%20Saber%20Mais%20Sobre%20a%20Franquia%20de%20Equipamentos" target="_blank">RECEBER A APRESENTAÇÃO AGORA!</a>
                 </button>
 
             </div>            
 
-            <img src="img/homem2dedos.png" alt="">
+            <img data-aos="zoom-in-right" src="img/homem2dedos.png" alt="">
         </div>
 
         <div class="somos">
             <div class="titulo">
-                <img src="img/foguete.png" alt="">
+                <img data-aos="zoom-in-right" src="img/foguete.png" alt="">
 
-                <h3>
+                <h3 data-aos="zoom-in">
                 Somos um foguete subindo!
                 </h3>
 
             </div>
 
-            <p>
+            <p data-aos="zoom-in">
                 Crescimento acelerado com projeções de implementação de novas 27 lojas em todo o Brasil só no primeiro semestre de 2023!
             </p>
 
-            <img src="img/mapa.png" alt="">       
+            <img data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1500" src="img/mapa.png" alt="">       
 
         </div>
 
-        <div class="pra-quem">
+        <div class="pra-quem" data-aos="zoom-in">
             <img id="pra-quem-img" src="img/mercado.png" alt="mercado">
 
             <h3>
@@ -129,27 +157,27 @@
             </p>
         </div>
 
-        <div class="voce-merece">
-            <img class="img-medalha" src="img/medalha2.png" alt="">
+        <div class="voce-merece" >
+            <img class="img-medalha" src="img/medalha2.png" alt="" data-aos="zoom-in" data-aos-duration="500">
 
-            <h3>
+            <h3 class=""data-aos="zoom-in" data-aos-duration="900">
                 Você merece o melhor, o que nos torna únicos!
             </h3>
 
             <div class="tabelas">
                 <div class="tabela1">
-                    <img src="img/dedo.png" alt="">
+                    <img data-aos="fade-right" data-aos-duration="500" src="img/dedo.png" alt="" class="">
     
-                    <div class="icon1">
+                    <div data-aos="fade-right" data-aos-duration="500"  class="icon1">
                         <img src="img/ok.png" alt="">
                         <p>
                             <span>SISTEMA EXCLUSIVO EASY-RENT:</span> LOCAÇÃO EM 5 MINUTOS, GERANDO UM AUMENTO DE ATÉ 125% NO FATURAMENTO DA SUA LOJA.
                         </p>
                     </div>
     
-                    <img src="img/mercado.png" alt="">
+                    <img data-aos="fade-right" data-aos-duration="500"src="img/mercado.png" alt="" class="">
     
-                    <div class="icon1">
+                    <div class="icon1" data-aos="fade-right" data-aos-duration="500">
                         <img src="img/ok.png" alt="">
                         <p>
                             <span>EQUIPE ESPECIALIZADA</span> EM ATRAÇÃO DE NOVOS CLIENTES E FIDELIZAÇÃO.
@@ -158,9 +186,9 @@
                 </div>
     
                 <div class="tabela2">
-                    <img src="img/megafone.png" alt="">
+                    <img data-aos="fade-right" data-aos-duration="500" src="img/megafone.png" alt="" class="">
 
-                    <div class="icon1">
+                    <div data-aos="fade-right" data-aos-duration="500" class="icon1" >
                         <img src="img/ok.png" alt="">
                         <p>
                             <span>AGENCIA INTERNA DE MARKETING:</span> CUIDAMOS DA CRIAÇÃO E DIVULGAÇÃO DO CONTEÚDO DA SUA LOJA!
@@ -169,9 +197,9 @@
                     </div> 
                                     
     
-                    <img src="img/socio.png" alt="">
+                    <img data-aos="fade-right" data-aos-duration="500" src="img/socio.png" alt="" class="">
                     
-                    <div class="icon1">
+                    <div data-aos="fade-right" data-aos-duration="500" class="icon1">
                         <img src="img/ok.png" alt="">
                         <p>
                             <span>GERIMOS SEUS PROSPECTOS</span>: PARCERIAS COM GRANDES CONSTRUTORAS E PROFISSIONAIS DA ÁREA. RECORRÊNCIA GARANTIDA!                    
@@ -196,24 +224,25 @@
                     
             <div class="texto">
 
-                <h3>
+                <h3 data-aos="fade" data-aos-duration="400">
                     Uma grande história para contar e muito mais futuro pela frente!
                 </h3>         
     
-                <p>
+                <p data-aos="fade" data-aos-duration="1200">
                     35 Anos de experiência do nosso fundador no mercado de manutenção de máquinas e mais de 10 anos de experiência dos sócios em Marketing e Direito Empresarial!
                 </p>
 
             </div>
 
-            <img src="img/foto3.png" alt="">
+            <img data-aos="fade" src="img/foto3.png" alt="" class="img-grande">
+            <img data-aos="fade" src="img/foto4.png" alt="" class="img-pequena">
 
             
         </div>
 
         
 
-        <div class="maior-margem">
+        <div class="maior-margem" data-aos="fade-up">
             <h3>
                 MAIOR MARGEM DE LUCRO DO MERCADO
             </h3>
@@ -233,59 +262,59 @@
             </p>
         </div>
 
-        <button class="btn-quero-receber"><a>RECEBER A APRESENTAÇÃO AGORA!</a></button>
+        <button data-aos="fade-up" class="btn-quero-receber"><a href="https://api.whatsapp.com/send?phone=558892410762&text=Quero%20Saber%20Mais%20Sobre%20a%20Franquia%20de%20Equipamentos" target="_blank">RECEBER A APRESENTAÇÃO AGORA!</a></button>
 
-        <div class="mercado-midia">
-            <h3>
+        <div class="mercado-midia" >
+            <h3 data-aos="fade">
                 Mercado na mídia
             </h3>
 
-            <img src="img/38.png" alt="">
-            <img src="img/39.png" alt="">
-            <img src="img/40.png" alt="">
+            <img data-aos="fade-up" src="img/38.png" alt="" class="">
+            <img data-aos="fade-up" src="img/39.png" alt="" class="">
+            <img data-aos="fade-up" src="img/40.png" alt="" class="">
         </div>
 
         <div class="trabalhe">
-            <h3>
+            <h3 data-aos="fade-in">
                 Trabalhe com as melhores empresas do mercado
             </h3>
             <div class="marcas">
-                <img src="img/bosch.png" alt="">
-                <img src="img//csm.png" alt="">
-                <img src="img/makita.png" alt="">
-                <img src="img/menegeti.png" alt="">
-                <img src="img/vonder.png" alt="">
-                <img src="img/montevil.png" alt="">
+                <img data-aos="fade-up" data-aos-duration="300" src="img/bosch.png" alt="" class="">
+                <img data-aos="fade-up" data-aos-duration="600" src="img//csm.png" alt="" class="">
+                <img data-aos="fade-up" data-aos-duration="900" src="img/makita.png" alt="" class="">
+                <img data-aos="fade-up" data-aos-duration="1200" src="img/menegeti.png" alt="" class="">
+                <img data-aos="fade-up" data-aos-duration="1500" src="img/vonder.png" alt="" class="">
+                <img data-aos="fade-up" data-aos-duration="1800" src="img/montevil.png" alt="" class="">
             </div>
         </div>
 
         <div class="premiada">
             <div class="premiada-box">
-                <img class="icon"src="img/medalha.png" alt="">
+                <img data-aos="fade-in" class="icon"src="img/medalha.png" alt="">
 
-            <h3>
+            <h3 data-aos="fade-in">
                 Empresa premiada
             </h3>
 
             <div class="conteudo">
-                <p class="text">
+                <p class="text" data-aos="fade-right">
                     MUITO ALÉM DE SER BOM NO QUE FAZEMOS. TER O RECONHECIMENTO DE <span>EMPRESA DO ANO</span> É O QUE NOS MOTIVA!
                 </p>
 
-                <img src="img/premiada2.png" alt="">
+                <img data-aos="flip-right" data-aos-duration="800" src="img/premiada2.png" alt="">
             </div>
             </div>
             
         </div>
 
         <div class="ser-franqueado">
-            <h3>
+            <h3 data-aos="fade-down" data-aos-duration="500">
                 Ser franqueado é fácil!
             </h3>           
 
             <section class="squares">
-                <div class="line1">  
-                    <div class="square1">
+                <div class="line1"> 
+                    <div class="square1" data-aos="fade-right">
                         <p>
                             Assinatura do COF
                         </p>
@@ -324,7 +353,7 @@
 
                     </div>
 
-                    <div class="square2">
+                    <div class="square2" data-aos="fade-right">
                         <p>
                             Assinatura do Contrato
                         </p>
@@ -332,7 +361,7 @@
                 </div>    
                 
                 <div class="line1">  
-                    <div class="square1">
+                    <div class="square1" data-aos="fade-right">
                         <p>
                             Treinamento geral
                         </p>
@@ -373,7 +402,7 @@
 
                     </div>
 
-                    <div class="square2">
+                    <div class="square2" data-aos="fade-right">
                         <p>
                             Escolha do endereço
                         </p>
@@ -381,8 +410,8 @@
                 </div>
                 
                 <div class="line1">  
-                    <div class="square1">
-                        <p name="planejamento" id="planejamento">
+                    <div class="square1" data-aos="fade-right">
+                        <p id="planejamento">
                             Planejamento e estratégias vencedoras
                         </p>
                     </div>
@@ -422,21 +451,21 @@
 
                     </div>
 
-                    <div class="square2">
+                    <div class="square2" data-aos="fade-right">
                         <p>
                             Adequação da loja
                         </p>
                     </div>
                 </div>
 
-                <div class="inauguracao">
+                <div class="inauguracao" data-aos="fade-up">
                     <p>
                         Dia 60<br>Grande Inauguração!
                     </p>
                 </div>
             </section>
 
-            <button class="btn-quero-receber"><a>RECEBER A APRESENTAÇÃO AGORA!</a></button>
+            <button class="btn-quero-receber "><a href="https://api.whatsapp.com/send?phone=558892410762&text=Quero%20Saber%20Mais%20Sobre%20a%20Franquia%20de%20Equipamentos" target="blank">RECEBER A APRESENTAÇÃO AGORA!</a></button>
         </div>
 
         <div class="seja">
@@ -454,10 +483,10 @@
 
         <br>
         <p>
-            email@email.com.br
+            atendimento@grupomontevill.com.br
         </p>
         <p>
-            85 98888-8898
+            (88) 99241-0762
         </p>
         <br><br>
         <p>
@@ -466,6 +495,17 @@
 
 
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        duration: 950,
+    }
+        
+    );
+
+
+  </script>   
     
 </body>
 </html>
